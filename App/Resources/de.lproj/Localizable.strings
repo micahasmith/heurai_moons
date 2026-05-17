@@ -1,0 +1,53 @@
+"body.moon" = "Mond";
+"body.mercury" = "Merkur";
+"body.venus" = "Venus";
+"body.mars" = "Mars";
+"body.jupiter" = "Jupiter";
+"body.saturn" = "Saturn";
+
+"hero.site" = "ort %@";
+"hero.tracked_bodies" = "%ld erfasst";
+"hero.above_horizon" = "%ld am Horizont";
+"hero.time" = "zeit %@";
+"hero.alerts_armed" = "alarme aktiv";
+"hero.alerts_off" = "alarme aus";
+
+"analysis.eyebrow" = "analyse";
+"analysis.title" = "lokale himmelsmatrix";
+"analysis.generalized.title" = "Verallgemeinertes Panel";
+"analysis.generalized.detail" = "Der ursprüngliche Mondbereich ist jetzt ein wiederverwendbares Himmels-Panel, sodass Mond und Planeten denselben Beobachtungsrahmen nutzen.";
+"analysis.tracked.title" = "Erfasste Körper";
+"analysis.tracked.detail" = "Alle %1$ld erfassten Körper bleiben im Stapel sichtbar, davon befinden sich %2$ld aktuell über dem Horizont von %3$@.";
+"analysis.locality.title" = "Standort";
+"analysis.locality.detail" = "Der aktive Standort ist %1$@. Horizontmeldungen sind für alle erfassten Körper %2$@.";
+"analysis.locality.alerts_on" = "aktiviert";
+"analysis.locality.alerts_off" = "deaktiviert";
+
+"observatory.title" = "planetarisches observatorium";
+"observatory.visible" = "im aktuellen himmel sichtbar";
+"observatory.hidden" = "unter lokalem horizont";
+
+"metric.altitude" = "höhe";
+"metric.azimuth" = "azimut";
+"metric.rise" = "aufgang";
+"metric.set" = "untergang";
+"metric.illumination" = "beleuchtung";
+"metric.magnitude" = "helligkeit";
+
+"visibility.high" = "hoch am himmel";
+"visibility.well_placed" = "gut positioniert";
+"visibility.near_horizon" = "nahe am horizont";
+"visibility.below_horizon" = "unter dem horizont";
+
+"footer.phase_window" = "lokales phasenfenster • %@";
+"footer.orbital_window" = "orbitfenster • %@";
+
+"location.current" = "Aktueller Standort";
+"location.coordinates" = "%.2f°, %.2f°";
+
+"event.enter" = "tritt über den horizont";
+"event.exit" = "fällt unter den horizont";
+
+"notification.title.enter" = "%@ ist über dem Horizont";
+"notification.title.exit" = "%@ ist unter dem Horizont";
+"notification.body.generic" = "Sichtbar von %1$@ um %2$@.";

@@ -1,0 +1,53 @@
+"body.moon" = "月";
+"body.mercury" = "水星";
+"body.venus" = "金星";
+"body.mars" = "火星";
+"body.jupiter" = "木星";
+"body.saturn" = "土星";
+
+"hero.site" = "地点 %@";
+"hero.tracked_bodies" = "追跡 %ld";
+"hero.above_horizon" = "地平線上 %ld";
+"hero.time" = "時刻 %@";
+"hero.alerts_armed" = "通知オン";
+"hero.alerts_off" = "通知オフ";
+
+"analysis.eyebrow" = "解析";
+"analysis.title" = "ローカル空マトリクス";
+"analysis.generalized.title" = "汎用パネル";
+"analysis.generalized.detail" = "元の月セクションは再利用可能な天体パネルになり、月と惑星が同じ観測フレームを共有できます。";
+"analysis.tracked.title" = "追跡天体";
+"analysis.tracked.detail" = "追跡中の %1$ld 天体はすべて表示され、そのうち %2$ld 天体が %3$@ から見て現在地平線上にあります。";
+"analysis.locality.title" = "観測地";
+"analysis.locality.detail" = "現在の観測地は %1$@ です。地平線通知はすべての追跡天体に対して %2$@ です。";
+"analysis.locality.alerts_on" = "有効";
+"analysis.locality.alerts_off" = "無効";
+
+"observatory.title" = "惑星観測パネル";
+"observatory.visible" = "現在の空で観測可能";
+"observatory.hidden" = "地平線の下";
+
+"metric.altitude" = "高度";
+"metric.azimuth" = "方位";
+"metric.rise" = "出";
+"metric.set" = "没";
+"metric.illumination" = "照度";
+"metric.magnitude" = "等級";
+
+"visibility.high" = "空高く";
+"visibility.well_placed" = "好位置";
+"visibility.near_horizon" = "地平線付近";
+"visibility.below_horizon" = "地平線下";
+
+"footer.phase_window" = "ローカル位相ウィンドウ • %@";
+"footer.orbital_window" = "軌道ウィンドウ • %@";
+
+"location.current" = "現在地";
+"location.coordinates" = "%.2f°, %.2f°";
+
+"event.enter" = "地平線上に入る";
+"event.exit" = "地平線下に入る";
+
+"notification.title.enter" = "%@ が地平線上にあります";
+"notification.title.exit" = "%@ が地平線下にあります";
+"notification.body.generic" = "%1$@ から %2$@ に観測できます。";

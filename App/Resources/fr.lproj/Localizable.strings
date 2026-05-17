@@ -1,0 +1,53 @@
+"body.moon" = "Lune";
+"body.mercury" = "Mercure";
+"body.venus" = "Vénus";
+"body.mars" = "Mars";
+"body.jupiter" = "Jupiter";
+"body.saturn" = "Saturne";
+
+"hero.site" = "site %@";
+"hero.tracked_bodies" = "%ld suivis";
+"hero.above_horizon" = "%ld à l’horizon";
+"hero.time" = "heure %@";
+"hero.alerts_armed" = "alertes actives";
+"hero.alerts_off" = "alertes désactivées";
+
+"analysis.eyebrow" = "analyse";
+"analysis.title" = "matrice du ciel local";
+"analysis.generalized.title" = "Panneau généralisé";
+"analysis.generalized.detail" = "La section lunaire d’origine est désormais un panneau céleste réutilisable afin que la Lune et les planètes partagent le même cadre d’observation.";
+"analysis.tracked.title" = "Corps suivis";
+"analysis.tracked.detail" = "Les %1$ld corps suivis restent visibles dans l’empilement, dont %2$ld sont actuellement au-dessus de l’horizon depuis %3$@.";
+"analysis.locality.title" = "Localité";
+"analysis.locality.detail" = "La localité active est %1$@. Les alertes d’horizon sont %2$@ pour tous les corps suivis.";
+"analysis.locality.alerts_on" = "activées";
+"analysis.locality.alerts_off" = "désactivées";
+
+"observatory.title" = "observatoire planétaire";
+"observatory.visible" = "visible dans le ciel actuel";
+"observatory.hidden" = "sous l’horizon local";
+
+"metric.altitude" = "altitude";
+"metric.azimuth" = "azimut";
+"metric.rise" = "lever";
+"metric.set" = "coucher";
+"metric.illumination" = "illumination";
+"metric.magnitude" = "magnitude";
+
+"visibility.high" = "haut dans le ciel";
+"visibility.well_placed" = "bien placé";
+"visibility.near_horizon" = "près de l’horizon";
+"visibility.below_horizon" = "sous l’horizon";
+
+"footer.phase_window" = "fenêtre de phase locale • %@";
+"footer.orbital_window" = "fenêtre orbitale • %@";
+
+"location.current" = "Position actuelle";
+"location.coordinates" = "%.2f°, %.2f°";
+
+"event.enter" = "passe au-dessus de l’horizon";
+"event.exit" = "passe sous l’horizon";
+
+"notification.title.enter" = "%@ est au-dessus de l’horizon";
+"notification.title.exit" = "%@ est sous l’horizon";
+"notification.body.generic" = "Visible depuis %1$@ à %2$@.";

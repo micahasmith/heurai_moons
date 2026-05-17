@@ -26,14 +26,14 @@ regenerate: setup
 open:
 	open $(PROJECT)
 
-build:
+build: regenerate
 	xcodebuild -project $(PROJECT) -scheme $(SCHEME) -configuration $(CONFIGURATION) build
 
 run-first-launch:
 	sudo xcodebuild -runFirstLaunch
 
-typecheck:
-	xcrun swiftc -typecheck -sdk "$(SDKROOT)" -target arm64-apple-macos14.0 Shared/Sources/*.swift App/Sources/*.swift
+typecheck: regenerate
+	xcodebuild -project $(PROJECT) -scheme $(SCHEME) -configuration $(CONFIGURATION) build
 
 clean:
 	rm -rf build DerivedData

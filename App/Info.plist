@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Heurai Moons</string>
+	<string>moons ∆ heurai</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +22,8 @@
 	<string>1</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.weather</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Heurai Moons uses your location to calculate local rise and set times for the Moon and planets.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

@@ -1,0 +1,53 @@
+"body.moon" = "Moon";
+"body.mercury" = "Mercury";
+"body.venus" = "Venus";
+"body.mars" = "Mars";
+"body.jupiter" = "Jupiter";
+"body.saturn" = "Saturn";
+
+"hero.site" = "site %@";
+"hero.tracked_bodies" = "tracked %ld";
+"hero.above_horizon" = "horizon %ld";
+"hero.time" = "time %@";
+"hero.alerts_armed" = "alerts armed";
+"hero.alerts_off" = "alerts off";
+
+"analysis.eyebrow" = "analysis";
+"analysis.title" = "local sky matrix";
+"analysis.generalized.title" = "Generalized panel";
+"analysis.generalized.detail" = "The original lunar section is now a reusable celestial panel, so Moon and planets can all share the same observatory frame.";
+"analysis.tracked.title" = "Tracked bodies";
+"analysis.tracked.detail" = "All %1$ld tracked bodies remain visible in the stack, with %2$ld currently above the horizon from %3$@.";
+"analysis.locality.title" = "Locality";
+"analysis.locality.detail" = "Live locality is %1$@. Horizon alerts are %2$@ for all tracked bodies.";
+"analysis.locality.alerts_on" = "enabled";
+"analysis.locality.alerts_off" = "disabled";
+
+"observatory.title" = "planetary observatory";
+"observatory.visible" = "visible in current sky";
+"observatory.hidden" = "below local horizon";
+
+"metric.altitude" = "altitude";
+"metric.azimuth" = "azimuth";
+"metric.rise" = "rise";
+"metric.set" = "set";
+"metric.illumination" = "illumination";
+"metric.magnitude" = "magnitude";
+
+"visibility.high" = "high in sky";
+"visibility.well_placed" = "well placed";
+"visibility.near_horizon" = "near horizon";
+"visibility.below_horizon" = "below horizon";
+
+"footer.phase_window" = "local phase window • %@";
+"footer.orbital_window" = "orbital window • %@";
+
+"location.current" = "Current location";
+"location.coordinates" = "%.2f°, %.2f°";
+
+"event.enter" = "enter horizon";
+"event.exit" = "exit horizon";
+
+"notification.title.enter" = "%@ is above the horizon";
+"notification.title.exit" = "%@ is below the horizon";
+"notification.body.generic" = "Visible from %1$@ at %2$@.";

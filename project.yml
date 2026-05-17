@@ -1,4 +1,8 @@
 name: HeuraiMoons
+packages:
+  SwiftAA:
+    url: https://github.com/onekiloparsec/SwiftAA.git
+    exactVersion: 3.0.0
 options:
   bundleIdPrefix: com.heurai
   deploymentTarget:
@@ -17,16 +21,21 @@ targets:
     sources:
       - path: App/Sources
       - path: Shared/Sources
+      - path: App/Resources
+        buildPhase: resources
     info:
       path: App/Info.plist
       properties:
-        CFBundleDisplayName: Heurai Moons
+        CFBundleDisplayName: "moons ∆ heurai"
         LSApplicationCategoryType: public.app-category.weather
+        NSLocationWhenInUseUsageDescription: Heurai Moons uses your location to calculate local rise and set times for the Moon and planets.
         NSPrincipalClass: NSApplication
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.heurai.moons
-        PRODUCT_NAME: HeuraiMoons
+        PRODUCT_NAME: "moons ∆ heurai"
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: App/Info.plist
         CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - package: SwiftAA

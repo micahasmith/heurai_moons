@@ -1,176 +1,123 @@
 import SwiftUI
 
 struct AppShellView: View {
-    var body: some View {
-        TimelineView(.periodic(from: .now, by: 60)) { context in
-            let snapshot = MoonMath.snapshot(for: context.date)
+    @EnvironmentObject private var store: ObservatoryStore
+    @AppStorage(InterfaceScale.storageKey) private var uiScale = InterfaceScale.default
 
-            ScrollView {
-                VStack(alignment: .leading, spacing: 32) {
-                    hero(snapshot: snapshot)
-                    observatory(snapshot: snapshot)
-                    analysis(snapshot: snapshot)
-                }
-                .padding(40)
-                .frame(maxWidth: .infinity, alignment: .leading)
+    private var density: InterfaceScale.Density {
+        InterfaceScale.density(for: uiScale)
+    }
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 32) {
+                hero(bundle: store.bundle)
+                observatorySections(bundle: store.bundle)
             }
-            .heuraiBackdrop()
+            .padding(shellPadding)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .heuraiBackdrop()
+        .task {
+            store.start()
         }
     }
 
-    private func hero(snapshot: LunarSnapshot) -> some View {
+    private func hero(bundle: ObservatorySnapshotBundle) -> some View {
         VStack(alignment: .leading, spacing: 18) {
             Text("∆:∴")
-                .font(HeuraiBrand.mono(24, weight: .medium))
+                .font(HeuraiBrand.mono(symbolSize, weight: .medium))
                 .tracking(6)
                 .foregroundStyle(HeuraiBrand.textSecondary)
 
-            Text("heurai moons")
-                .font(HeuraiBrand.mono(58, weight: .bold))
-                .foregroundStyle(HeuraiBrand.textPrimary)
-
-            Text("a symbolic lunar HUD for macOS, shaped by the same monochrome atmosphere, editorial spacing, and signal-first typography found on heurai.com.")
-                .font(HeuraiBrand.mono(22))
-                .foregroundStyle(HeuraiBrand.textSecondary)
-                .frame(maxWidth: 760, alignment: .leading)
-
-            HStack(spacing: 12) {
-                pill(label: snapshot.phaseName)
-                pill(label: "illumination \(snapshot.illuminationPercentText)")
-                pill(label: "next \(snapshot.nextPhaseDisplayText)")
+            heroPillLayout {
+                pill(label: L10n.heroSite(bundle.location.name))
+                pill(label: L10n.heroTrackedBodies(bundle.sections.count))
+                pill(label: L10n.heroAboveHorizon(bundle.visibleCount))
+                pill(label: store.notificationsEnabled ? L10n.heroAlertsArmed() : L10n.heroAlertsOff())
+                pill(label: L10n.heroTime(bundle.generatedAt.formatted(date: .omitted, time: .shortened)))
             }
         }
     }
 
-    private func observatory(snapshot: LunarSnapshot) -> some View {
-        HStack(alignment: .top, spacing: 22) {
-            LunarHUDView(snapshot: snapshot)
-                .frame(maxWidth: .infinity, minHeight: 420)
-                .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
-
-            VStack(alignment: .leading, spacing: 18) {
-                observatoryCard(
-                    eyebrow: "event horizon",
-                    title: snapshot.nextPhaseName,
-                    value: snapshot.nextPhaseCountdownText,
-                    detail: snapshot.nextPhaseDate.formatted(date: .abbreviated, time: .shortened)
-                )
-
-                observatoryCard(
-                    eyebrow: "lunar age",
-                    title: snapshot.ageText,
-                    value: snapshot.progressText,
-                    detail: "tracked against a \(String(format: "%.2f", MoonMath.synodicMonthDays)) day synodic cycle"
-                )
-
-                observatoryCard(
-                    eyebrow: "trajectory",
-                    title: snapshot.trajectoryLabel,
-                    value: snapshot.phaseName,
-                    detail: "lunation \(snapshot.lunation)"
-                )
+    private func observatorySections(bundle: ObservatorySnapshotBundle) -> some View {
+        LazyVGrid(columns: observatoryColumns, alignment: .leading, spacing: cardSpacing) {
+            ForEach(bundle.sections) { snapshot in
+                CelestialSectionView(snapshot: snapshot, density: density, scale: uiScale)
+                    .frame(minHeight: observatoryHeight)
+                    .clipShape(RoundedRectangle(cornerRadius: observatoryCornerRadius, style: .continuous))
             }
-            .frame(width: 320)
-        }
-    }
-
-    private func analysis(snapshot: LunarSnapshot) -> some View {
-        VStack(alignment: .leading, spacing: 18) {
-            sectionHeader(eyebrow: "analysis", title: "desktop observatory")
-
-            HStack(alignment: .top, spacing: 18) {
-                instructionCard(
-                    index: "01",
-                    title: "Current state",
-                    detail: "The moon is in \(snapshot.phaseName), with \(snapshot.illuminationPercentText) illumination and a \(snapshot.trajectoryLabel) signal."
-                )
-                instructionCard(
-                    index: "02",
-                    title: "Cadence",
-                    detail: "The dashboard refreshes every minute inside the app, so the orbital readout stays current without relying on WidgetKit."
-                )
-                instructionCard(
-                    index: "03",
-                    title: "Direction",
-                    detail: "This is now a pure macOS app foundation. We can next add notifications, menubar mode, calendar overlays, or a richer moon render."
-                )
-            }
-        }
-    }
-
-    private func instructionCard(index: String, title: String, detail: String) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(index)
-                .font(HeuraiBrand.mono(11, weight: .semibold))
-                .foregroundStyle(HeuraiBrand.textMuted)
-            Text(title)
-                .font(HeuraiBrand.mono(20, weight: .semibold))
-                .foregroundStyle(HeuraiBrand.textPrimary)
-            Text(detail)
-                .font(HeuraiBrand.mono(13))
-                .foregroundStyle(HeuraiBrand.textSecondary)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(HeuraiBrand.panelStrong)
-        )
-        .overlay {
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .stroke(HeuraiBrand.hairline, lineWidth: 1)
-        }
-    }
-
-    private func observatoryCard(eyebrow: String, title: String, value: String, detail: String) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(eyebrow)
-                .font(HeuraiBrand.mono(10))
-                .foregroundStyle(HeuraiBrand.textMuted)
-            Text(title)
-                .font(HeuraiBrand.mono(28, weight: .bold))
-                .foregroundStyle(HeuraiBrand.textPrimary)
-            Text(value)
-                .font(HeuraiBrand.mono(12, weight: .medium))
-                .foregroundStyle(HeuraiBrand.textSecondary)
-            Text(detail)
-                .font(HeuraiBrand.mono(11))
-                .foregroundStyle(HeuraiBrand.textMuted)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(HeuraiBrand.panelStrong)
-        )
-        .overlay {
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .stroke(HeuraiBrand.hairline, lineWidth: 1)
         }
     }
 
     private func pill(label: String) -> some View {
         Text(label)
-            .font(HeuraiBrand.mono(11, weight: .medium))
+            .font(HeuraiBrand.mono(11 * uiScale, weight: .medium))
             .foregroundStyle(HeuraiBrand.textPrimary)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
+            .lineLimit(1)
+            .fixedSize()
+            .padding(.horizontal, 12 * uiScale)
+            .padding(.vertical, 8 * uiScale)
             .background(Capsule().fill(HeuraiBrand.panelStrong))
             .overlay {
                 Capsule().stroke(HeuraiBrand.hairline, lineWidth: 1)
             }
     }
 
-    private func sectionHeader(eyebrow: String, title: String) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(eyebrow)
-                .font(HeuraiBrand.mono(11))
-                .foregroundStyle(HeuraiBrand.textMuted)
-            Text(title)
-                .font(HeuraiBrand.mono(30, weight: .bold))
-                .foregroundStyle(HeuraiBrand.textPrimary)
+    private var shellPadding: Double {
+        28 * uiScale + (density == .tiled ? 4 : 12)
+    }
+
+    private var symbolSize: Double {
+        22 * uiScale
+    }
+
+    private var cardSpacing: Double {
+        density == .tiled ? 16 : 22
+    }
+
+    private var observatoryColumns: [GridItem] {
+        [GridItem(.adaptive(minimum: observatoryTileWidth, maximum: density == .editorial ? 1_600 : 820), spacing: cardSpacing, alignment: .top)]
+    }
+
+    private var observatoryTileWidth: Double {
+        switch density {
+        case .editorial:
+            900
+        case .balanced:
+            540
+        case .tiled:
+            360
+        }
+    }
+
+    private var observatoryHeight: Double {
+        switch density {
+        case .editorial:
+            420 * uiScale
+        case .balanced:
+            360 * uiScale
+        case .tiled:
+            320 * uiScale
+        }
+    }
+
+    private var observatoryCornerRadius: Double {
+        32 * uiScale
+    }
+
+    @ViewBuilder
+    private func heroPillLayout<Content: View>(@ViewBuilder content: () -> Content) -> some View {
+        if density == .tiled {
+            LazyVGrid(
+                columns: [GridItem(.adaptive(minimum: max(180, 220 * uiScale), maximum: 360), spacing: 12, alignment: .leading)],
+                alignment: .leading,
+                spacing: 12
+            ) {
+                content()
+            }
+        } else {
+            HStack(spacing: 12, content: content)
         }
     }
 }
