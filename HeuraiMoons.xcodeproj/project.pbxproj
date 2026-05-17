@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202CF203581A3A4AE9F34F33 /* HeuraiMoonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D69B56453F4E88B6230633 /* HeuraiMoonsApp.swift */; };
+		253DBA422A4618F44273CA0D /* LunarSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF9C954DE3DFE1F12AE71B4 /* LunarSnapshot.swift */; };
+		83093094B0B091570BF39AE1 /* AppShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */; };
+		E470358975D0653D3ECBD9CC /* MoonMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C22D0948916A10A9F967 /* MoonMath.swift */; };
+		F59F35DE14E49B1F87ECC54F /* HeuraiBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129C4B938D192E035DE66345 /* HeuraiBrand.swift */; };
+		FC7A7665700123CE4C91B937 /* LunarHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6399ACB8E7180179214CB /* LunarHUDView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		129C4B938D192E035DE66345 /* HeuraiBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeuraiBrand.swift; sourceTree = "<group>"; };
+		77D69B56453F4E88B6230633 /* HeuraiMoonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeuraiMoonsApp.swift; sourceTree = "<group>"; };
+		7DDCF9C6EF3ADBC90809B949 /* HeuraiMoons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeuraiMoons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC1C22D0948916A10A9F967 /* MoonMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonMath.swift; sourceTree = "<group>"; };
+		BBF9C954DE3DFE1F12AE71B4 /* LunarSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarSnapshot.swift; sourceTree = "<group>"; };
+		C7A6399ACB8E7180179214CB /* LunarHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarHUDView.swift; sourceTree = "<group>"; };
+		CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		162B498CA56E95E360EB3C27 = {
+			isa = PBXGroup;
+			children = (
+				98143B4A6B4E667F6B213B75 /* Sources */,
+				99A2E434E2B2E4860A5CD193 /* Sources */,
+				FAD6A91CE24FBC3F67CF5DAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98143B4A6B4E667F6B213B75 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */,
+				77D69B56453F4E88B6230633 /* HeuraiMoonsApp.swift */,
+			);
+			name = Sources;
+			path = App/Sources;
+			sourceTree = "<group>";
+		};
+		99A2E434E2B2E4860A5CD193 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				129C4B938D192E035DE66345 /* HeuraiBrand.swift */,
+				C7A6399ACB8E7180179214CB /* LunarHUDView.swift */,
+				BBF9C954DE3DFE1F12AE71B4 /* LunarSnapshot.swift */,
+				9CC1C22D0948916A10A9F967 /* MoonMath.swift */,
+			);
+			name = Sources;
+			path = Shared/Sources;
+			sourceTree = "<group>";
+		};
+		FAD6A91CE24FBC3F67CF5DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DDCF9C6EF3ADBC90809B949 /* HeuraiMoons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A367DD26DC633BED3AF608B9 /* HeuraiMoons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F422AE8E2D1211D865D80B /* Build configuration list for PBXNativeTarget "HeuraiMoons" */;
+			buildPhases = (
+				B9BAB6DE21396924A73F05A9 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeuraiMoons;
+			packageProductDependencies = (
+			);
+			productName = HeuraiMoons;
+			productReference = 7DDCF9C6EF3ADBC90809B949 /* HeuraiMoons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4449E4D3D8BCDA9E2EC1045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A367DD26DC633BED3AF608B9 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1B14023DBFB084D538FE2779 /* Build configuration list for PBXProject "HeuraiMoons" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 162B498CA56E95E360EB3C27;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A367DD26DC633BED3AF608B9 /* HeuraiMoons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9BAB6DE21396924A73F05A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83093094B0B091570BF39AE1 /* AppShellView.swift in Sources */,
+				F59F35DE14E49B1F87ECC54F /* HeuraiBrand.swift in Sources */,
+				202CF203581A3A4AE9F34F33 /* HeuraiMoonsApp.swift in Sources */,
+				FC7A7665700123CE4C91B937 /* LunarHUDView.swift in Sources */,
+				253DBA422A4618F44273CA0D /* LunarSnapshot.swift in Sources */,
+				E470358975D0653D3ECBD9CC /* MoonMath.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F74944EEBEFC0648ABF97C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heurai.moons;
+				PRODUCT_NAME = HeuraiMoons;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E6CD798FEEB77499E974D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heurai.moons;
+				PRODUCT_NAME = HeuraiMoons;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AC51ACCDF7260EC1916ABE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E6074A796476A6F5A1C27E79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B14023DBFB084D538FE2779 /* Build configuration list for PBXProject "HeuraiMoons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC51ACCDF7260EC1916ABE2 /* Debug */,
+				E6074A796476A6F5A1C27E79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		38F422AE8E2D1211D865D80B /* Build configuration list for PBXNativeTarget "HeuraiMoons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F74944EEBEFC0648ABF97C2 /* Debug */,
+				7E6CD798FEEB77499E974D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4449E4D3D8BCDA9E2EC1045 /* Project object */;
+}

@@ -1,0 +1,32 @@
+name: HeuraiMoons
+options:
+  bundleIdPrefix: com.heurai
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SDKROOT: macosx
+    SUPPORTED_PLATFORMS: macosx
+    DEVELOPMENT_TEAM: ""
+targets:
+  HeuraiMoons:
+    type: application
+    platform: macOS
+    sources:
+      - path: App/Sources
+      - path: Shared/Sources
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Heurai Moons
+        LSApplicationCategoryType: public.app-category.weather
+        NSPrincipalClass: NSApplication
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.heurai.moons
+        PRODUCT_NAME: HeuraiMoons
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_STYLE: Automatic
