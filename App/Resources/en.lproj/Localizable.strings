@@ -11,6 +11,7 @@
 "hero.time" = "time %@";
 "hero.alerts_armed" = "alerts armed";
 "hero.alerts_off" = "alerts off";
+"hero.alerts_attention" = "enable alerts";
 
 "analysis.eyebrow" = "analysis";
 "analysis.title" = "local sky matrix";
@@ -48,6 +49,54 @@
 "event.enter" = "enter horizon";
 "event.exit" = "exit horizon";
 
+"controls.title" = "alert controls";
+"controls.subtitle" = "live scheduling for rise and set events across all tracked bodies";
+"controls.notifications.label" = "horizon notifications";
+"controls.notifications.on" = "on";
+"controls.notifications.off" = "off";
+"controls.grant_access" = "grant access";
+"controls.send_test" = "send test";
+"controls.test_queued" = "test queued for 5 sec";
+"controls.next_alerts.title" = "next scheduled alerts";
+"controls.next_alerts.empty" = "no upcoming alerts";
+"controls.status.live" = "notifications are armed and live";
+"controls.status.paused" = "notifications are authorized but paused";
+"controls.status.permission" = "notification permission still needed";
+"controls.next_alerts.row" = "%1$@ • %2$@ • %3$@";
+
+"settings.title" = "Notifications";
+"settings.subtitle" = "Manage horizon alerts and preview the next scheduled planetary events.";
+"settings.location.section" = "Location";
+"settings.location.description" = "Use your Mac's current location when you want live sky calculations, or keep a saved observing site without prompting every launch.";
+"settings.location.toggle" = "Use current location";
+"settings.location.current" = "Current site: %@";
+"settings.location.saved" = "Saved site: %@";
+"settings.location.status" = "Status";
+"settings.location.helper.live" = "Live location is enabled.";
+"settings.location.helper.permission" = "Location permission is still needed.";
+"settings.location.helper.saved" = "A saved observing site will be reused until you turn live location back on.";
+"settings.location.grant.title" = "Allow location access";
+"settings.location.grant.body" = "Grant access only if you want the observatory to follow your current place automatically.";
+"settings.location.grant.button" = "Allow Location";
+"settings.notifications.section" = "Horizon Alerts";
+"settings.notifications.description" = "Schedule local notifications whenever tracked bodies enter or leave the horizon from your current observing site.";
+"settings.notifications.toggle" = "Enable horizon alerts";
+"settings.notifications.helper.live" = "Alerts are authorized and live.";
+"settings.notifications.helper.paused" = "Alerts are authorized but paused.";
+"settings.notifications.helper.permission" = "Notification permission is still needed.";
+"settings.grant_access.title" = "Allow notifications";
+"settings.grant_access.body" = "Grant access so moons ∆ heurai can notify you when planets and the Moon cross the local horizon.";
+"settings.grant_access.button" = "Allow Notifications";
+"settings.test.section" = "Test Alert";
+"settings.test.body" = "Send a single test notification to confirm delivery on this Mac.";
+"settings.test.button" = "Send Test Alert";
+"settings.test.queued" = "A test alert is queued for 5 seconds from now.";
+"settings.upcoming.section" = "Upcoming Alerts";
+"settings.upcoming.body" = "The next scheduled rise and set notifications for the current observing location.";
+"settings.open_button" = "Open Settings";
+
 "notification.title.enter" = "%@ is above the horizon";
 "notification.title.exit" = "%@ is below the horizon";
 "notification.body.generic" = "Visible from %1$@ at %2$@.";
+"notification.test.title" = "moons ∆ heurai test";
+"notification.test.body" = "Test alert delivered from the local observatory scheduler.";

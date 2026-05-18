@@ -11,6 +11,7 @@
 "hero.time" = "heure %@";
 "hero.alerts_armed" = "alertes actives";
 "hero.alerts_off" = "alertes désactivées";
+"hero.alerts_attention" = "activer les alertes";
 
 "analysis.eyebrow" = "analyse";
 "analysis.title" = "matrice du ciel local";
@@ -51,3 +52,36 @@
 "notification.title.enter" = "%@ est au-dessus de l’horizon";
 "notification.title.exit" = "%@ est sous l’horizon";
 "notification.body.generic" = "Visible depuis %1$@ à %2$@.";
+"notification.test.title" = "test moons ∆ heurai";
+"notification.test.body" = "Alerte de test envoyée par le planificateur de l’observatoire local.";
+
+"settings.title" = "Notifications";
+"settings.subtitle" = "Gérez les alertes d’horizon et consultez les prochains événements planétaires programmés.";
+"settings.location.section" = "Localisation";
+"settings.location.description" = "Utilisez la position actuelle de votre Mac pour un ciel en direct, ou conservez un site d’observation enregistré sans redemander l’autorisation à chaque lancement.";
+"settings.location.toggle" = "Utiliser la position actuelle";
+"settings.location.current" = "Site actuel : %@";
+"settings.location.saved" = "Site enregistré : %@";
+"settings.location.status" = "État";
+"settings.location.helper.live" = "La localisation en direct est activée.";
+"settings.location.helper.permission" = "L’autorisation de localisation est encore nécessaire.";
+"settings.location.helper.saved" = "Un site enregistré sera réutilisé jusqu’à ce que vous réactiviez la localisation en direct.";
+"settings.location.grant.title" = "Autoriser l’accès à la localisation";
+"settings.location.grant.body" = "Accordez l’accès uniquement si vous voulez que l’observatoire suive automatiquement votre position actuelle.";
+"settings.location.grant.button" = "Autoriser la localisation";
+"settings.notifications.section" = "Alertes d’horizon";
+"settings.notifications.description" = "Planifiez des notifications locales quand les corps suivis passent au-dessus ou au-dessous de l’horizon depuis votre lieu d’observation actuel.";
+"settings.notifications.toggle" = "Activer les alertes d’horizon";
+"settings.notifications.helper.live" = "Les alertes sont autorisées et actives.";
+"settings.notifications.helper.paused" = "Les alertes sont autorisées mais en pause.";
+"settings.notifications.helper.permission" = "L’autorisation de notification est encore nécessaire.";
+"settings.grant_access.title" = "Autoriser les notifications";
+"settings.grant_access.body" = "Accordez l’accès afin que moons ∆ heurai puisse vous avertir lorsque les planètes et la Lune franchissent l’horizon local.";
+"settings.grant_access.button" = "Autoriser les notifications";
+"settings.test.section" = "Alerte de test";
+"settings.test.body" = "Envoyez une notification de test pour confirmer la réception sur ce Mac.";
+"settings.test.button" = "Envoyer une alerte de test";
+"settings.test.queued" = "Une alerte de test est programmée pour dans 5 secondes.";
+"settings.upcoming.section" = "Alertes à venir";
+"settings.upcoming.body" = "Les prochaines notifications de lever et de coucher programmées pour le lieu d’observation actuel.";
+"settings.open_button" = "Ouvrir les réglages";

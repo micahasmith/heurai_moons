@@ -37,6 +37,10 @@ enum L10n {
         text("hero.alerts_off")
     }
 
+    static func heroAlertsAttention() -> String {
+        text("hero.alerts_attention")
+    }
+
     static func analysisEyebrow() -> String {
         text("analysis.eyebrow")
     }
@@ -159,6 +163,186 @@ enum L10n {
 
     static func notificationBody(locationName: String, dateText: String) -> String {
         format("notification.body.generic", locationName, dateText)
+    }
+
+    static func controlsTitle() -> String {
+        text("controls.title")
+    }
+
+    static func controlsSubtitle() -> String {
+        text("controls.subtitle")
+    }
+
+    static func controlsNotificationsLabel() -> String {
+        text("controls.notifications.label")
+    }
+
+    static func settingsTitle() -> String {
+        text("settings.title")
+    }
+
+    static func settingsSubtitle() -> String {
+        text("settings.subtitle")
+    }
+
+    static func settingsNotificationsSection() -> String {
+        text("settings.notifications.section")
+    }
+
+    static func settingsLocationSection() -> String {
+        text("settings.location.section")
+    }
+
+    static func settingsLocationDescription() -> String {
+        text("settings.location.description")
+    }
+
+    static func settingsLocationToggle() -> String {
+        text("settings.location.toggle")
+    }
+
+    static func settingsLocationCurrent(_ locationName: String) -> String {
+        format("settings.location.current", locationName)
+    }
+
+    static func settingsLocationSaved(_ locationName: String) -> String {
+        format("settings.location.saved", locationName)
+    }
+
+    static func settingsLocationStatusLabel() -> String {
+        text("settings.location.status")
+    }
+
+    static func settingsLocationHelper(usingDeviceLocation: Bool, accessEnabled: Bool) -> String {
+        if usingDeviceLocation && accessEnabled {
+            return text("settings.location.helper.live")
+        }
+        if usingDeviceLocation {
+            return text("settings.location.helper.permission")
+        }
+        return text("settings.location.helper.saved")
+    }
+
+    static func settingsLocationGrantTitle() -> String {
+        text("settings.location.grant.title")
+    }
+
+    static func settingsLocationGrantBody() -> String {
+        text("settings.location.grant.body")
+    }
+
+    static func settingsLocationGrantButton() -> String {
+        text("settings.location.grant.button")
+    }
+
+    static func settingsNotificationsDescription() -> String {
+        text("settings.notifications.description")
+    }
+
+    static func settingsNotificationsToggle() -> String {
+        text("settings.notifications.toggle")
+    }
+
+    static func settingsNotificationsHelper(enabled: Bool, armed: Bool) -> String {
+        switch (enabled, armed) {
+        case (true, true):
+            return text("settings.notifications.helper.live")
+        case (true, false):
+            return text("settings.notifications.helper.paused")
+        default:
+            return text("settings.notifications.helper.permission")
+        }
+    }
+
+    static func settingsGrantAccessTitle() -> String {
+        text("settings.grant_access.title")
+    }
+
+    static func settingsGrantAccessBody() -> String {
+        text("settings.grant_access.body")
+    }
+
+    static func settingsGrantAccessButton() -> String {
+        text("settings.grant_access.button")
+    }
+
+    static func settingsTestSection() -> String {
+        text("settings.test.section")
+    }
+
+    static func settingsTestBody() -> String {
+        text("settings.test.body")
+    }
+
+    static func settingsSendTestButton() -> String {
+        text("settings.test.button")
+    }
+
+    static func settingsTestQueued() -> String {
+        text("settings.test.queued")
+    }
+
+    static func settingsUpcomingSection() -> String {
+        text("settings.upcoming.section")
+    }
+
+    static func settingsUpcomingBody() -> String {
+        text("settings.upcoming.body")
+    }
+
+    static func settingsOpenButton() -> String {
+        text("settings.open_button")
+    }
+
+    static func controlsNotificationsOn() -> String {
+        text("controls.notifications.on")
+    }
+
+    static func controlsNotificationsOff() -> String {
+        text("controls.notifications.off")
+    }
+
+    static func controlsGrantAccess() -> String {
+        text("controls.grant_access")
+    }
+
+    static func controlsSendTest() -> String {
+        text("controls.send_test")
+    }
+
+    static func controlsTestQueued() -> String {
+        text("controls.test_queued")
+    }
+
+    static func controlsNextAlertsTitle() -> String {
+        text("controls.next_alerts.title")
+    }
+
+    static func controlsNoAlerts() -> String {
+        text("controls.next_alerts.empty")
+    }
+
+    static func controlsNotificationStatus(enabled: Bool, armed: Bool) -> String {
+        switch (enabled, armed) {
+        case (true, true):
+            return text("controls.status.live")
+        case (true, false):
+            return text("controls.status.paused")
+        default:
+            return text("controls.status.permission")
+        }
+    }
+
+    static func controlsAlertRow(bodyName: String, eventLabel: String, relative: String) -> String {
+        format("controls.next_alerts.row", bodyName, eventLabel, relative)
+    }
+
+    static func notificationTestTitle() -> String {
+        text("notification.test.title")
+    }
+
+    static func notificationTestBody() -> String {
+        text("notification.test.body")
     }
 
     private static func text(_ key: String) -> String {

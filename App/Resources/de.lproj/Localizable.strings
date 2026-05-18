@@ -11,6 +11,7 @@
 "hero.time" = "zeit %@";
 "hero.alerts_armed" = "alarme aktiv";
 "hero.alerts_off" = "alarme aus";
+"hero.alerts_attention" = "alarme aktivieren";
 
 "analysis.eyebrow" = "analyse";
 "analysis.title" = "lokale himmelsmatrix";
@@ -51,3 +52,36 @@
 "notification.title.enter" = "%@ ist über dem Horizont";
 "notification.title.exit" = "%@ ist unter dem Horizont";
 "notification.body.generic" = "Sichtbar von %1$@ um %2$@.";
+"notification.test.title" = "moons ∆ heurai test";
+"notification.test.body" = "Testmeldung vom lokalen Observatoriumsplaner gesendet.";
+
+"settings.title" = "Mitteilungen";
+"settings.subtitle" = "Verwalte Horizontmeldungen und prüfe die nächsten geplanten planetaren Ereignisse.";
+"settings.location.section" = "Standort";
+"settings.location.description" = "Verwende den aktuellen Standort deines Macs für Live-Himmelsdaten oder behalte einen gespeicherten Beobachtungsort ohne bei jedem Start erneut zu fragen.";
+"settings.location.toggle" = "Aktuellen Standort verwenden";
+"settings.location.current" = "Aktueller Ort: %@";
+"settings.location.saved" = "Gespeicherter Ort: %@";
+"settings.location.status" = "Status";
+"settings.location.helper.live" = "Live-Standort ist aktiviert.";
+"settings.location.helper.permission" = "Eine Standortberechtigung wird noch benötigt.";
+"settings.location.helper.saved" = "Ein gespeicherter Beobachtungsort wird weiterverwendet, bis du den Live-Standort wieder aktivierst.";
+"settings.location.grant.title" = "Standortzugriff erlauben";
+"settings.location.grant.body" = "Erlaube den Zugriff nur, wenn das Observatorium deinem aktuellen Ort automatisch folgen soll.";
+"settings.location.grant.button" = "Standort erlauben";
+"settings.notifications.section" = "Horizontmeldungen";
+"settings.notifications.description" = "Plane lokale Mitteilungen, wenn verfolgte Himmelskörper an deinem aktuellen Beobachtungsort über den Horizont steigen oder darunter fallen.";
+"settings.notifications.toggle" = "Horizontmeldungen aktivieren";
+"settings.notifications.helper.live" = "Mitteilungen sind autorisiert und aktiv.";
+"settings.notifications.helper.paused" = "Mitteilungen sind autorisiert, aber pausiert.";
+"settings.notifications.helper.permission" = "Die Mitteilungsberechtigung wird noch benötigt.";
+"settings.grant_access.title" = "Mitteilungen erlauben";
+"settings.grant_access.body" = "Erlaube den Zugriff, damit moons ∆ heurai dich benachrichtigen kann, wenn Planeten und Mond den lokalen Horizont kreuzen.";
+"settings.grant_access.button" = "Mitteilungen erlauben";
+"settings.test.section" = "Testmeldung";
+"settings.test.body" = "Sende eine einzelne Testmitteilung, um die Zustellung auf diesem Mac zu prüfen.";
+"settings.test.button" = "Testmeldung senden";
+"settings.test.queued" = "Eine Testmeldung wurde für in 5 Sekunden eingeplant.";
+"settings.upcoming.section" = "Kommende Meldungen";
+"settings.upcoming.body" = "Die nächsten geplanten Aufgangs- und Untergangsmeldungen für den aktuellen Beobachtungsort.";
+"settings.open_button" = "Einstellungen öffnen";

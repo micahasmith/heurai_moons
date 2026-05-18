@@ -8,6 +8,7 @@ enum HeuraiBrand {
     static let textSecondary = Color.white.opacity(0.66)
     static let textMuted = Color.white.opacity(0.34)
     static let accent = Color.white.opacity(0.9)
+    static let warning = Color(red: 0.98, green: 0.54, blue: 0.22)
     static let ring = Color.white.opacity(0.2)
     static let hairline = Color.white.opacity(0.12)
 

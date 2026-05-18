@@ -1,6 +1,12 @@
 import Foundation
 import UserNotifications
 
+enum NotificationAuthorizationState {
+    case notDetermined
+    case authorized
+    case denied
+}
+
 @MainActor
 struct NotificationScheduler {
     private let center = UNUserNotificationCenter.current()
@@ -16,6 +22,20 @@ struct NotificationScheduler {
     func pendingAuthorization() async -> Bool {
         let settings = await center.notificationSettings()
         return settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional
+    }
+
+    func authorizationState() async -> NotificationAuthorizationState {
+        let settings = await center.notificationSettings()
+        switch settings.authorizationStatus {
+        case .authorized, .provisional, .ephemeral:
+            return .authorized
+        case .denied:
+            return .denied
+        case .notDetermined:
+            return .notDetermined
+        @unknown default:
+            return .denied
+        }
     }
 
     func scheduleEvents(referenceDate: Date, location: ObservingLocation) async {
@@ -48,5 +68,24 @@ struct NotificationScheduler {
 
             try? await center.add(request)
         }
+    }
+
+    func clearPending() {
+        center.removeAllPendingNotificationRequests()
+    }
+
+    func scheduleTestNotification(after seconds: TimeInterval = 5) async {
+        let content = UNMutableNotificationContent()
+        content.title = L10n.notificationTestTitle()
+        content.body = L10n.notificationTestBody()
+        content.sound = .default
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: max(seconds, 1), repeats: false)
+        let request = UNNotificationRequest(
+            identifier: "test-notification-\(UUID().uuidString)",
+            content: content,
+            trigger: trigger
+        )
+        try? await center.add(request)
     }
 }

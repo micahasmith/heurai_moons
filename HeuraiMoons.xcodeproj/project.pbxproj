@@ -17,16 +17,19 @@
 		369DF2507702E5417105900B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A050AE501CC84C45C0F7D31 /* InfoPlist.strings */; };
 		40044CE76504E11F6285D436 /* ObservatoryLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82DFF379C54158459F23B95 /* ObservatoryLocationManager.swift */; };
 		563FA31F3A5E76801948B7D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17817B41A97683EB738F3695 /* InfoPlist.strings */; };
+		616D83FBF04B48237D5866BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD6230F15BF47188214965E /* Assets.xcassets */; };
 		658E091D7FAC1644B53F7028 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBDE416A5BD4852844765784 /* InfoPlist.strings */; };
 		6B604911023E1B08E6BAD1E3 /* ObservatoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12915F9816DBDA7FB7737F6F /* ObservatoryStore.swift */; };
 		83093094B0B091570BF39AE1 /* AppShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */; };
 		B202707EAD93A5369AC4F49E /* InterfaceScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D31C24DCFC559E36DB5D5B /* InterfaceScale.swift */; };
 		BE9B22D8C234D4678EC66884 /* SwiftAA in Frameworks */ = {isa = PBXBuildFile; productRef = 298E9FF5DC7FF42FF4957330 /* SwiftAA */; };
+		BEA771CB06176E0FEA8A9E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCEF87283439A878CD511C /* AppDelegate.swift */; };
 		CA4B041D5B0AF507C1377FD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2285AA84FBD61169AEFA06 /* NotificationScheduler.swift */; };
 		D65A5F24475BA6BA3F040652 /* CelestialEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEF187AB73D651553FC0504 /* CelestialEvent.swift */; };
 		E4605773E06911DDB7D9DE86 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D748C04A93FA6BAF7C877DC /* Localizable.strings */; };
 		E470358975D0653D3ECBD9CC /* MoonMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C22D0948916A10A9F967 /* MoonMath.swift */; };
 		F59F35DE14E49B1F87ECC54F /* HeuraiBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129C4B938D192E035DE66345 /* HeuraiBrand.swift */; };
+		F8CF66F156F5ACEBC860EC2B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8902B2350094CFC9E86B09 /* SettingsView.swift */; };
 		FC7A7665700123CE4C91B937 /* LunarHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6399ACB8E7180179214CB /* LunarHUDView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +41,13 @@
 		2A050AE501CC84C45C0F7D31 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BEF187AB73D651553FC0504 /* CelestialEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialEvent.swift; sourceTree = "<group>"; };
 		45492DC379F2B2C4A29FB06D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4FD6230F15BF47188214965E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5796EA45FC1D19D8DB8F4A5D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77D69B56453F4E88B6230633 /* HeuraiMoonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeuraiMoonsApp.swift; sourceTree = "<group>"; };
 		7DDCF9C6EF3ADBC90809B949 /* HeuraiMoons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeuraiMoons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BFBE350F79EDD6AA2BCFAC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		876FD1F7D832051695E21012 /* ObservingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservingLocation.swift; sourceTree = "<group>"; };
+		8BCCEF87283439A878CD511C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		940DE8902198862C784D8C9E /* CelestialCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialCatalog.swift; sourceTree = "<group>"; };
 		9A2285AA84FBD61169AEFA06 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		9CC1C22D0948916A10A9F967 /* MoonMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonMath.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShellView.swift; sourceTree = "<group>"; };
 		D82DFF379C54158459F23B95 /* ObservatoryLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservatoryLocationManager.swift; sourceTree = "<group>"; };
 		DBDE416A5BD4852844765784 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC8902B2350094CFC9E86B09 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EF5CF1C1E099E78E95C0772D /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,11 +89,13 @@
 		98143B4A6B4E667F6B213B75 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8BCCEF87283439A878CD511C /* AppDelegate.swift */,
 				CCCEB3E2EC570219EA9DA0A7 /* AppShellView.swift */,
 				77D69B56453F4E88B6230633 /* HeuraiMoonsApp.swift */,
 				9A2285AA84FBD61169AEFA06 /* NotificationScheduler.swift */,
 				D82DFF379C54158459F23B95 /* ObservatoryLocationManager.swift */,
 				12915F9816DBDA7FB7737F6F /* ObservatoryStore.swift */,
+				EC8902B2350094CFC9E86B09 /* SettingsView.swift */,
 			);
 			name = Sources;
 			path = App/Sources;
@@ -114,6 +122,7 @@
 		C4986D383BCEDB5E430327B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4FD6230F15BF47188214965E /* Assets.xcassets */,
 				2A050AE501CC84C45C0F7D31 /* InfoPlist.strings */,
 				02D968D64371C0DDD7FEFA16 /* InfoPlist.strings */,
 				17817B41A97683EB738F3695 /* InfoPlist.strings */,
@@ -200,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616D83FBF04B48237D5866BE /* Assets.xcassets in Resources */,
 				369DF2507702E5417105900B /* InfoPlist.strings in Resources */,
 				658E091D7FAC1644B53F7028 /* InfoPlist.strings in Resources */,
 				00DFEE3D17E2996C6181447D /* InfoPlist.strings in Resources */,
@@ -215,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA771CB06176E0FEA8A9E02 /* AppDelegate.swift in Sources */,
 				83093094B0B091570BF39AE1 /* AppShellView.swift in Sources */,
 				0ED49E6F45C647795AD1E2C5 /* CelestialCatalog.swift in Sources */,
 				D65A5F24475BA6BA3F040652 /* CelestialEvent.swift in Sources */,
@@ -230,6 +241,7 @@
 				40044CE76504E11F6285D436 /* ObservatoryLocationManager.swift in Sources */,
 				6B604911023E1B08E6BAD1E3 /* ObservatoryStore.swift in Sources */,
 				1450D0B233E18E1B5C7FEFFB /* ObservingLocation.swift in Sources */,
+				F8CF66F156F5ACEBC860EC2B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

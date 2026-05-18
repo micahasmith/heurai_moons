@@ -25,12 +25,51 @@ struct ObservingLocation {
         return String(format: "%.3f,%.3f", locale: Locale(identifier: "en_US_POSIX"), latitude, longitude)
     }
 
+    var latitude: Double {
+        coordinates.latitude.value
+    }
+
+    var longitude: Double {
+        -coordinates.longitude.value
+    }
+
+    var altitudeMeters: Double {
+        coordinates.altitude.value
+    }
+
     static var assumedLocality: ObservingLocation {
         ObservingLocation(
             name: "New York City",
             latitude: 40.7128,
             longitude: -74.0060,
             altitudeMeters: 10
+        )
+    }
+}
+
+extension ObservingLocation {
+    struct Persisted: Codable {
+        let name: String
+        let latitude: Double
+        let longitude: Double
+        let altitudeMeters: Double
+    }
+
+    var persisted: Persisted {
+        Persisted(
+            name: name,
+            latitude: latitude,
+            longitude: longitude,
+            altitudeMeters: altitudeMeters
+        )
+    }
+
+    init(persisted: Persisted) {
+        self.init(
+            name: persisted.name,
+            latitude: persisted.latitude,
+            longitude: persisted.longitude,
+            altitudeMeters: persisted.altitudeMeters
         )
     }
 }

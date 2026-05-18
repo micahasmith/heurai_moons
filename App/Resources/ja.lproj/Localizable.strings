@@ -11,6 +11,7 @@
 "hero.time" = "時刻 %@";
 "hero.alerts_armed" = "通知オン";
 "hero.alerts_off" = "通知オフ";
+"hero.alerts_attention" = "通知を有効化";
 
 "analysis.eyebrow" = "解析";
 "analysis.title" = "ローカル空マトリクス";
@@ -51,3 +52,36 @@
 "notification.title.enter" = "%@ が地平線上にあります";
 "notification.title.exit" = "%@ が地平線下にあります";
 "notification.body.generic" = "%1$@ から %2$@ に観測できます。";
+"notification.test.title" = "moons ∆ heurai テスト";
+"notification.test.body" = "ローカル観測スケジューラからのテスト通知です。";
+
+"settings.title" = "通知";
+"settings.subtitle" = "地平線通知を管理し、次に予定されている惑星イベントを確認します。";
+"settings.location.section" = "位置情報";
+"settings.location.description" = "ライブの空計算が必要なときは Mac の現在地を使い、毎回許可を求めたくない場合は保存済みの観測地を使い続けます。";
+"settings.location.toggle" = "現在地を使う";
+"settings.location.current" = "現在の観測地: %@";
+"settings.location.saved" = "保存済み観測地: %@";
+"settings.location.status" = "状態";
+"settings.location.helper.live" = "ライブ位置情報が有効です。";
+"settings.location.helper.permission" = "位置情報の許可がまだ必要です。";
+"settings.location.helper.saved" = "ライブ位置情報を再度有効にするまで、保存済みの観測地を使い続けます。";
+"settings.location.grant.title" = "位置情報アクセスを許可";
+"settings.location.grant.body" = "観測所が現在地を自動で追従してほしい場合にのみアクセスを許可してください。";
+"settings.location.grant.button" = "位置情報を許可";
+"settings.notifications.section" = "地平線通知";
+"settings.notifications.description" = "現在の観測地から見て、追跡天体が地平線を出入りするときにローカル通知を送信します。";
+"settings.notifications.toggle" = "地平線通知を有効にする";
+"settings.notifications.helper.live" = "通知は許可され、有効です。";
+"settings.notifications.helper.paused" = "通知は許可されていますが停止中です。";
+"settings.notifications.helper.permission" = "通知の許可がまだ必要です。";
+"settings.grant_access.title" = "通知を許可";
+"settings.grant_access.body" = "moons ∆ heurai が惑星や月の地平線通過を通知できるように、アクセスを許可してください。";
+"settings.grant_access.button" = "通知を許可";
+"settings.test.section" = "テスト通知";
+"settings.test.body" = "この Mac に届くか確認するため、テスト通知を 1 件送信します。";
+"settings.test.button" = "テスト通知を送信";
+"settings.test.queued" = "5 秒後にテスト通知が送信されます。";
+"settings.upcoming.section" = "今後の通知";
+"settings.upcoming.body" = "現在の観測地に対して予定されている次の出没通知です。";
+"settings.open_button" = "設定を開く";
