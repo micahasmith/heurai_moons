@@ -12,6 +12,7 @@
 "hero.alerts_armed" = "alerts armed";
 "hero.alerts_off" = "alerts off";
 "hero.alerts_attention" = "enable alerts";
+"hero.location_attention" = "use current location";
 
 "analysis.eyebrow" = "analysis";
 "analysis.title" = "local sky matrix";

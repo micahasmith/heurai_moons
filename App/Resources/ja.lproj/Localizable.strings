@@ -12,6 +12,7 @@
 "hero.alerts_armed" = "通知オン";
 "hero.alerts_off" = "通知オフ";
 "hero.alerts_attention" = "通知を有効化";
+"hero.location_attention" = "現在地を使う";
 
 "analysis.eyebrow" = "解析";
 "analysis.title" = "ローカル空マトリクス";

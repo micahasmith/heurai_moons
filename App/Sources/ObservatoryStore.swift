@@ -180,4 +180,8 @@ final class ObservatoryStore: ObservableObject {
         }
         NSWorkspace.shared.open(url)
     }
+
+    var showsLiveLocationSitePill: Bool {
+        usesDeviceLocation && locationAccessEnabled
+    }
 }

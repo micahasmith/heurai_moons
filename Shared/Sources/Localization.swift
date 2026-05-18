@@ -41,6 +41,10 @@ enum L10n {
         text("hero.alerts_attention")
     }
 
+    static func heroLocationAttention() -> String {
+        text("hero.location_attention")
+    }
+
     static func analysisEyebrow() -> String {
         text("analysis.eyebrow")
     }

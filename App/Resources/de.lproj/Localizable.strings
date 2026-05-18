@@ -12,6 +12,7 @@
 "hero.alerts_armed" = "alarme aktiv";
 "hero.alerts_off" = "alarme aus";
 "hero.alerts_attention" = "alarme aktivieren";
+"hero.location_attention" = "aktuellen standort nutzen";
 
 "analysis.eyebrow" = "analyse";
 "analysis.title" = "lokale himmelsmatrix";

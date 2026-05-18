@@ -12,6 +12,7 @@
 "hero.alerts_armed" = "alertes actives";
 "hero.alerts_off" = "alertes désactivées";
 "hero.alerts_attention" = "activer les alertes";
+"hero.location_attention" = "utiliser la position actuelle";
 
 "analysis.eyebrow" = "analyse";
 "analysis.title" = "matrice du ciel local";

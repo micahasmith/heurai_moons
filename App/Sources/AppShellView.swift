@@ -29,7 +29,14 @@ struct AppShellView: View {
                 .foregroundStyle(HeuraiBrand.textSecondary)
 
             heroPillLayout {
-                pill(label: L10n.heroSite(bundle.location.name))
+                if store.showsLiveLocationSitePill {
+                    pill(label: L10n.heroSite(bundle.location.name))
+                } else {
+                    SettingsLink {
+                        attentionPill(label: L10n.heroLocationAttention())
+                    }
+                    .buttonStyle(.plain)
+                }
                 pill(label: L10n.heroTrackedBodies(bundle.sections.count))
                 pill(label: L10n.heroAboveHorizon(bundle.visibleCount))
                 if shouldShowAlertSettingsPill {

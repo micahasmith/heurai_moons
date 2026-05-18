@@ -12,6 +12,7 @@
 "hero.alerts_armed" = "alertas activas";
 "hero.alerts_off" = "alertas desactivadas";
 "hero.alerts_attention" = "activar alertas";
+"hero.location_attention" = "usar ubicación actual";
 
 "analysis.eyebrow" = "análisis";
 "analysis.title" = "matriz del cielo local";
